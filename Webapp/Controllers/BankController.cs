@@ -1,5 +1,9 @@
+using System;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-// using ZXing;
+using Webapp.Helpers;
+using WebApp.Helpers.BlockCypher;
+using WebApp.Helpers.BlockCypher.Objects;
 
 namespace Webapp.Controllers
 {
@@ -15,8 +19,12 @@ namespace Webapp.Controllers
 
         public IActionResult Status()
         {
+            // check transaction
+            var  api = new Blockcypher(Constants.apiUserToken, Endpoint.BtcTest3);
+            api.GetTransactions(Constants.AddressSessionKey);
+            
 
-            return
+            return View();
         }
     }
 
