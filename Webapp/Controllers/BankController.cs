@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-//using com.google.zxing;
-using ZXing;
+// using ZXing;
 
 namespace Webapp.Controllers
 {
@@ -9,9 +8,17 @@ namespace Webapp.Controllers
         public IActionResult Index()
         {
                 // var bv = new BarcodeWriter();
-            TempData["QrCode"] = "";
+            TempData["qrData"] = "SomeValue";
 
             return View();
         }
+
+        public IActionResult Status()
+        {
+
+            return
+        }
     }
+
+
 }
