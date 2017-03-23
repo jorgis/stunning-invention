@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDCoin", "IDCoin\IDCoin.csproj", "{EDF5588F-1DCD-44C1-B646-DE87199F8F50}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDF5588F-1DCD-44C1-B646-DE87199F8F50}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{EDF5588F-1DCD-44C1-B646-DE87199F8F50}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{EDF5588F-1DCD-44C1-B646-DE87199F8F50}.Release|iPhone.ActiveCfg = Release|iPhone
+		{EDF5588F-1DCD-44C1-B646-DE87199F8F50}.Release|iPhone.Build.0 = Release|iPhone
+		{EDF5588F-1DCD-44C1-B646-DE87199F8F50}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{EDF5588F-1DCD-44C1-B646-DE87199F8F50}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{EDF5588F-1DCD-44C1-B646-DE87199F8F50}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{EDF5588F-1DCD-44C1-B646-DE87199F8F50}.Debug|iPhone.Build.0 = Debug|iPhone
+	EndGlobalSection
+EndGlobal

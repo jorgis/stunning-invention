@@ -1,10 +1,22 @@
 ﻿using System;
-namespace Webapp
+using Microsoft.AspNetCore.Mvc;
+
+namespace Webapp.Controllers
 {
-	public class AuthenticatorController
+	public class AuthenticatorController : Controller
 	{
-		public AuthenticatorController()
+
+		[HttpGet]
+		public IActionResult Index()
 		{
+			return View();
+		}
+
+
+		[HttpPost]
+		public IActionResult Verify()
+		{
+			return View("Index");
 		}
 	}
 }

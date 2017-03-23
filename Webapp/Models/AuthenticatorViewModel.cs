@@ -3,8 +3,6 @@ namespace Webapp
 {
 	public class AuthenticatorViewModel
 	{
-		public AuthenticatorViewModel()
-		{
-		}
+		string Keyword { get; set; }
 	}
 }
