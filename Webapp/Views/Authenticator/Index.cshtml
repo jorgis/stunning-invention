@@ -1,7 +1,28 @@
 ﻿@{
     ViewData["Title"] = "Authenticator";
 }
+
 <h2>@ViewData["Title"].</h2>
 <h3>@ViewData["Message"]</h3>
 
-<p>Use this area to provide authenticator information</p>
+@model AuthenticatorViewModel
+
+<form>
+	<table>
+     <tr>
+          <td><b>Enter keywords:</b></td>
+  		  <td>
+          </td>
+     </tr>
+     <tr>
+          <td></td>
+          <td>
+          </td>
+     </tr>
+	</table>
+	
+    <button asp-action="Verify" asp-controller="Authenticator">Verify</button>
+ 
+</form>
+
+
