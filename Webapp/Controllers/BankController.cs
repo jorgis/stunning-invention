@@ -9,24 +9,25 @@ namespace Webapp.Controllers
 {
     public class BankController : Controller
     {
+        [HttpGet]
         public IActionResult Index()
         {
                 // var bv = new BarcodeWriter();
             TempData["qrData"] = "SomeValue";
-
-            return View();
+            var model = new BankViewModel();
+            model.QrValue = "SomeValue";
+            return View(model);
         }
 
+        [HttpGet]
         public IActionResult Status()
         {
             // check transaction
             var  api = new Blockcypher(Constants.apiUserToken, Endpoint.BtcTest3);
-            api.GetTransactions(Constants.AddressSessionKey);
-            
+            var tr = api.GetTransactions(Constants.AddressSessionKey);
+            var count = tr.Result.Length;
 
-            return View();
+            return new JsonResult(count);
         }
     }
-
-
 }
