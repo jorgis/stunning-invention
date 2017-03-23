@@ -33,7 +33,7 @@ namespace IDCoinApp
 			// that points to the root of the bundled Resources folder
 			WebView.LoadHtmlString(page, NSBundle.MainBundle.BundleUrl);
 
-			var url = "https://idcoin.howell.no/Authenticator"; // NOTE: https secure request
+			var url = "https://idcoin.howell.no/Authenticator/Selector"; // NOTE: https secure request
 			WebView.LoadRequest(new NSUrlRequest(new NSUrl(url)));
 
 			// Perform any additional setup after loading the view, typically from a nib.
