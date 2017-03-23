@@ -1,0 +1,9 @@
+# Build and Release Folders
+bin/
+[Oo]bj/
+[Bb]in/
+
+# Other files and folders
+.settings/
+
+.DS_Store
