@@ -8,5 +8,7 @@ namespace Webapp.Helpers
 
         public const string PrivateKeySessionKey = "privateKey";
         public const string PublicKeySessionKey = "publicKey";
+
+        public const string AddressSessionKey = "address";
     }
 }

@@ -25,8 +25,14 @@ namespace Webapp.Controllers
 
             Console.WriteLine($"Address: {address.Address}");
 
+            Faucet f = await api.Faucet(address.Address, new Satoshi(100));
             
+            AddressBalance bal = await api.GetBalanceForAddress(address.Address);
+            
+            Console.WriteLine($"Balance: {bal}");
+
             HttpContext.Session.SetString(Constants.PrivateKeySessionKey, address.Private);
+            HttpContext.Session.SetString(Constants.AddressSessionKey, address.Address);
         }
     }
 }
