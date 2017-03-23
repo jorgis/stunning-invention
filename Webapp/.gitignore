@@ -6,3 +6,4 @@ bin/
 # Other files and folders
 .settings/
 
+.DS_Store
