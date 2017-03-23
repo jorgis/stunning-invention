@@ -1,0 +1,40 @@
+# Version: 10.4.0.128 (cycle9: ba11e48)
+# [first argument, ignore] # /Library/Frameworks/Xamarin.iOS.framework/Versions/10.4.0.128/lib/mtouch/mtouch.exe
+/Library/Frameworks/Xamarin.iOS.framework/Versions/10.4.0.128/lib/mtouch/mtouch.exe \
+	--cache \
+	/Users/daniele/Repositories/stunning-invention/IDCoinApp/IDCoinApp/obj/iPhoneSimulator/Debug/mtouch-cache \
+	--sim \
+	/Users/daniele/Repositories/stunning-invention/IDCoinApp/IDCoinApp/bin/iPhoneSimulator/Debug/IDCoinApp.app \
+	--executable \
+	IDCoinApp \
+	--fastdev \
+	--debug \
+	--profiling \
+	--nolink \
+	--sdkroot \
+	/Applications/Xcode.app/Contents/Developer \
+	--sdk \
+	10.2 \
+	--targetver \
+	10.2 \
+	--http-message-handler=HttpClientHandler \
+	--tls-provider=default \
+	"--abi=i386,x86_64" \
+	--symbollist \
+	/Users/daniele/Repositories/stunning-invention/IDCoinApp/IDCoinApp/obj/iPhoneSimulator/Debug/mtouch-symbols.list \
+	--dsym=no \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Web.Services.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Xml.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll \
+	--target-framework \
+	"Xamarin.iOS,v1.0" \
+	/Users/daniele/Repositories/stunning-invention/IDCoinApp/IDCoinApp/bin/iPhoneSimulator/Debug/IDCoinApp.exe \
