@@ -37,5 +37,11 @@ namespace Webapp.Controllers
 		{
 			return View();
 		}
+
+		[HttpGet]
+		public IActionResult Selector()
+		{
+			return View();
+		}
 	}
 }
