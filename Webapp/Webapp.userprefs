@@ -1,11 +1,19 @@
 ﻿<Properties StartupConfiguration="{CDCACBC4-424F-459A-845B-38A8F76DDF7B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Authenticator/Index.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Authenticator/Error.cshtml">
     <Files>
-      <File FileName="Controllers/HomeController.cs" Line="14" Column="10" />
-      <File FileName="appsettings.Development.json" Line="1" Column="1" />
-      <File FileName="Models/AuthenticatorViewModel.cs" Line="7" Column="2" />
-      <File FileName="Controllers/AuthenticatorController.cs" Line="13" Column="4" />
-      <File FileName="Views/Authenticator/Index.cshtml" Line="7" Column="54" />
+      <File FileName="Views/Authenticator/Index.cshtml" Line="15" Column="8" />
+      <File FileName="appsettings.json" Line="1" Column="1" />
+      <File FileName="appsettings.Development.json" Line="11" Column="1" />
+      <File FileName="Startup.cs" Line="52" Column="1" />
+      <File FileName="Webapp.userprefs" Line="6" Column="35" />
+      <File FileName="Views/Shared/Error.cshtml" Line="8" Column="5" />
+      <File FileName="Views/Shared/_Layout.cshtml" Line="51" Column="25" />
+      <File FileName="Models/AuthenticatorViewModel.cs" Line="5" Column="3" />
+      <File FileName="Controllers/BankController.cs" Line="1" Column="1" />
+      <File FileName="Controllers/IssuerController.cs" Line="22" Column="1" />
+      <File FileName="Controllers/AuthenticatorController.cs" Line="38" Column="12" />
+      <File FileName="Views/Authenticator/Sucess.cshtml" Line="9" Column="1" />
+      <File FileName="Views/Authenticator/Error.cshtml" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

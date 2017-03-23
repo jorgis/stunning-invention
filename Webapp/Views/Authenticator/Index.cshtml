@@ -1,5 +1,6 @@
 ﻿@{
     ViewData["Title"] = "Authenticator";
+    var modelView = Model;
 }
 
 <h2>@ViewData["Title"].</h2>
@@ -7,19 +8,11 @@
 
 @model AuthenticatorViewModel
 
-<form>
-	<table>
-     <tr>
-          <td><b>Enter keywords:</b></td>
-  		  <td>
-          </td>
-     </tr>
-     <tr>
-          <td></td>
-          <td>
-          </td>
-     </tr>
-	</table>
+<form asp-action="Verify" asp-controller="Authenticator">
+	<div class="form-group">
+	<label asp-for="@modelView.Keyword">Enter keywords:</label>
+		<input asp-for="@modelView.Keyword">
+	</div>
 	
     <button asp-action="Verify" asp-controller="Authenticator">Verify</button>
  
