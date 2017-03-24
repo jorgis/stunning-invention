@@ -19,3 +19,4 @@
 /Users/daniele/Repositories/stunning-invention/IDCoinApp/IDCoinAndroid/obj/Debug/res/mipmap-xxxhdpi/icon.png
 /Users/daniele/Repositories/stunning-invention/IDCoinApp/IDCoinAndroid/obj/Debug/R.cs.flag
 /Users/daniele/Repositories/stunning-invention/IDCoinApp/IDCoinAndroid/obj/Debug/uploadflags.txt
+/Users/daniele/Repositories/stunning-invention/IDCoinApp/IDCoinAndroid/obj/Debug/DIdentity.csprojResolveAssemblyReference.cache
