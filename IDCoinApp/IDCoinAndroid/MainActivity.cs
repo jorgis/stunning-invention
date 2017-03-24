@@ -34,6 +34,10 @@ namespace IDCoinAndroid
 			// that points to the root of the bundled Assets folder
 			webView.LoadDataWithBaseURL("file:///android_asset/", page, "text/html", "UTF-8", null);
 
+			var url = "https://idcoin.howell.no/Authenticator/Selector"; // NOTE: https secure request
+			webView.LoadUrl( url);
+
+
 		}
 
 		private class HybridWebViewClient : WebViewClient
