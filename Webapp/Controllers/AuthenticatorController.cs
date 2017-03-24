@@ -26,7 +26,6 @@ namespace Webapp.Controllers
 			return View("Index");
 		}
 
-		[HttpPost]
 		public IActionResult Success()
 		{
 			return View();
