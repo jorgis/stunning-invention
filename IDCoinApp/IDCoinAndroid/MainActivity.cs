@@ -63,8 +63,8 @@ namespace IDCoinAndroid
 						Console.WriteLine("Scanned Barcode: " + result.Text);
 						scanner.Cancel();
 						// TODO
-						//System.Net.WebClient client = new System.Net.WebClient();
-						//client.UploadString("https://idcoin.howell.no/Bank/Authenticated", result.Text);
+						System.Net.WebClient client = new System.Net.WebClient();
+						client.UploadString("https://idcoin.howell.no/Bank/Authenticated", result.Text);
 						// - POST request to /Bank/AuthenticateOrWhatever with the keywords in the QR
 						// - Navigate to /Authenticator/Success
 
