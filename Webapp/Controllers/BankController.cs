@@ -33,9 +33,10 @@ namespace Webapp.Controllers
         }
 
         [HttpPost]
-        public void Authenticated(string phrase)
+        public string Authenticated(string phrase)
         {   
             OneTimePassword.Keys.Add(phrase);
+            return phrase;
         }
 
         [HttpGet]
@@ -48,7 +49,8 @@ namespace Webapp.Controllers
 
             var phrase = HttpContext.Session.GetString("Phrase");
 
-            var success = OneTimePassword.Keys.Exists(a => a == phrase);
+            // var success = OneTimePassword.Keys.Exists(a => a == phrase);
+            var success = OneTimePassword.Keys.Count > 0;
             if(success)
             {
                 OneTimePassword.Keys.Remove(phrase);
