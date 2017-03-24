@@ -27,6 +27,18 @@ namespace Webapp.Controllers
         }
 
         [HttpGet]
+        public IActionResult Secure()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public void Authenticated(string phrase)
+        {   
+            OneTimePassword.Keys.Add(phrase);
+        }
+
+        [HttpGet]
         public IActionResult Status()
         {   
             // check transaction
