@@ -1,11 +1,11 @@
-
 @using WebApp.Models;
 
 @model BirthCertificateInputModel
 
 @{
-    ViewData["Title"] = "About";
+    ViewData["Title"] = "National Registry";
 }
+
 
 <h2>@ViewData["Title"].</h2>
 <p>@Html.Raw(@ViewData["Message"])</p>
@@ -16,4 +16,6 @@
     <input asp-for="Biometry" /><br />
     <button type="submit">Register new citizen</button>
 </form>
+
+
 
