@@ -1,7 +1,9 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDCoinApp", "IDCoinApp\IDCoinApp.csproj", "{74900D50-A51A-4409-A751-D407F368540E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDCoiniAppOS", "IDCoinApp\IDCoiniAppOS.csproj", "{74900D50-A51A-4409-A751-D407F368540E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDCoinAppAndroid", "IDCoinAndroid\IDCoinAppAndroid.csproj", "{794AC10B-FB1C-4614-A43A-94A09B97D408}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,5 +21,13 @@ Global
 		{74900D50-A51A-4409-A751-D407F368540E}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 		{74900D50-A51A-4409-A751-D407F368540E}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{74900D50-A51A-4409-A751-D407F368540E}.Debug|iPhone.Build.0 = Debug|iPhone
+		{794AC10B-FB1C-4614-A43A-94A09B97D408}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{794AC10B-FB1C-4614-A43A-94A09B97D408}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{794AC10B-FB1C-4614-A43A-94A09B97D408}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{794AC10B-FB1C-4614-A43A-94A09B97D408}.Release|iPhone.Build.0 = Release|Any CPU
+		{794AC10B-FB1C-4614-A43A-94A09B97D408}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{794AC10B-FB1C-4614-A43A-94A09B97D408}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{794AC10B-FB1C-4614-A43A-94A09B97D408}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{794AC10B-FB1C-4614-A43A-94A09B97D408}.Debug|iPhone.Build.0 = Debug|Any CPU
 	EndGlobalSection
 EndGlobal

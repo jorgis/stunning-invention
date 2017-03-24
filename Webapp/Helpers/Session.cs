@@ -25,10 +25,15 @@ namespace WebApp.Helpers
             return res;
         }
 
-        public string GetDemoAddress()
+        public string GetAddress()
         {
             var res =  _context.Session.GetString(Constants.AddressSessionKey);
             return res;
+        }
+
+        public string GetDemoAddress()
+        {
+            return "C7x3Qk4Ap5nvAnxtCEnczmgH34nvfeGRBA";
         }
 
     }

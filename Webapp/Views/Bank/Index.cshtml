@@ -3,16 +3,21 @@
     var df = TempData["qrData"];
     var modelView = Model;
 }
-<h2>@ViewData["Title"]</h2>
+
 <h3>@ViewData["Message"]</h3>
 @model BankViewModel
 
-<p>TODO BANK IS TO COME HEREUse this area to provide additional information.</p>
+<br>
+<h3>Login to your bank account</h3>
+<p></p>
 
-Scan qr-koden med appen<br />
+Scan qr-code with your Digital Identity app 
+
+<br>
+
 <img  onload="poll();" src='https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=@modelView.QrValue'>
+
 <br />
-Eller skriv inn denne koden i appen: <b>@df</b>
-<br />
-@modelView.QrValue
+
+Or you can write this code in your app: @modelView.QrValue
 <br />

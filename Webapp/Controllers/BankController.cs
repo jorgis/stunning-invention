@@ -16,15 +16,26 @@ namespace Webapp.Controllers
         {
             _session = new Session(HttpContext);
         }
-        
+
         [HttpGet]
         public IActionResult Index()
         {
-                // var bv = new BarcodeWriter();
-            TempData["qrData"] = "SomeValue";
             var model = new BankViewModel();
-            model.QrValue = "SomeValue";
+            model.QrValue = OneTimePassword.Phrase();
+            HttpContext.Session.SetString("Phrase", model.QrValue);
             return View(model);
+        }
+
+        [HttpGet]
+        public IActionResult Secure()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public void Authenticated(string phrase)
+        {   
+            OneTimePassword.Keys.Add(phrase);
         }
 
         [HttpGet]
@@ -35,7 +46,18 @@ namespace Webapp.Controllers
             var tr = api.GetTransactions(_session.GetDemoAddress());
             var count = tr.Result.Length;
 
-            return new JsonResult(count);
+            var phrase = HttpContext.Session.GetString("Phrase");
+
+            var success = OneTimePassword.Keys.Exists(a => a == phrase);
+            if(success)
+            {
+                OneTimePassword.Keys.Remove(phrase);
+                return new JsonResult(true);
+            }
+            else
+            {
+                return new JsonResult(false);
+            }
         }
     }
 }

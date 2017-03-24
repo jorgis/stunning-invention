@@ -26,11 +26,17 @@ namespace Webapp.Controllers
 			return View("Index");
 		}
 
-		[HttpGet]
 		public IActionResult Success()
 		{
 			return View();
 		}
+
+		[HttpPost]
+		public IActionResult Scanner()
+		{
+			return View();
+		}
+
 
 		[HttpGet]
 		public IActionResult Error()

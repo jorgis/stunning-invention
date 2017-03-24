@@ -7,14 +7,14 @@ function poll() {
             type: "GET",
             success: function(data) {
                 console.log("polling");
-                if(data === '1')
+                if(data === 'true')
                 {
-                    window.location.href = "/Authenticator/success";
+                    window.location.href = "/Bank/Secure";
                 }
             },
             error: function(data){
                 console.log("polling failed");
-                window.location.href = "/Authenticator/error"
+                // window.location.href = "/Authenticator/error"
             },
             dataType: "json",
             complete: poll,
