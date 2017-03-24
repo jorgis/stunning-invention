@@ -16,14 +16,13 @@ namespace Webapp.Controllers
         {
             _session = new Session(HttpContext);
         }
-        
+
         [HttpGet]
         public IActionResult Index()
         {
-                // var bv = new BarcodeWriter();
-            TempData["qrData"] = "SomeValue";
             var model = new BankViewModel();
-            model.QrValue = "SomeValue";
+            model.QrValue = OneTimePassword.Phrase();
+            HttpContext.Session.SetString("Phrase", model.QrValue);
             return View(model);
         }
 
@@ -34,6 +33,8 @@ namespace Webapp.Controllers
             var  api = new Blockcypher(Constants.apiUserToken, Endpoint.BtcTest3);
             var tr = api.GetTransactions(_session.GetDemoAddress());
             var count = tr.Result.Length;
+
+            var phrase = HttpContext.Session.GetString("Phrase");
 
             return new JsonResult(count);
         }
