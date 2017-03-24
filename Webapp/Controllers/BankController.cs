@@ -36,7 +36,16 @@ namespace Webapp.Controllers
 
             var phrase = HttpContext.Session.GetString("Phrase");
 
-            return new JsonResult(count);
+            var success = OneTimePassword.Keys.Exists(a => a == phrase);
+            if(success)
+            {
+                OneTimePassword.Keys.Remove(phrase);
+                return new JsonResult(true);
+            }
+            else
+            {
+                return new JsonResult(false);
+            }
         }
     }
 }

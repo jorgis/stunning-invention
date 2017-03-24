@@ -7,7 +7,7 @@ function poll() {
             type: "GET",
             success: function(data) {
                 console.log("polling");
-                if(data === '1')
+                if(data === 'true')
                 {
                     window.location.href = "/Authenticator/success";
                 }

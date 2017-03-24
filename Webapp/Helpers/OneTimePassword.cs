@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 public class OneTimePassword
 {
@@ -11,4 +12,6 @@ public class OneTimePassword
         var s2 = w2[new Random().Next(w2.Length-1)];
         return $"{s1} {s2}";
     }
+
+    public static List<string> Keys = new List<string>();
 }
