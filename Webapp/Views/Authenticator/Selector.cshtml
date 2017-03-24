@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Authenticator";
+    var modelView = Model;
+}
+
+<h2>@ViewData["Title"].</h2>
+<h3>@ViewData["Message"]</h3>
+
+@model AuthenticatorViewModel
+
+<form asp-action="Verify" asp-controller="Authenticator">
+
+	<button asp-action="Verify" asp-controller="Authenticator">Verify</button>
+
+ 
+</form>
+
+<br>
+
+<button asp-action="Verify" asp-controller="Authenticator">Scan</button>
+
+
