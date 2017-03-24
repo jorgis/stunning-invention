@@ -11,14 +11,8 @@
 <p>Borger er lagt til - her er fødselsattesten:</p>
 <p>@Html.Raw(@ViewData["Message"])</p>
 
-<p>Navn: <span style="font-family: monospace;">@Model.Name</p>
-<p>Personnummer: @Model.PersonNummer</p>
-<p>Fødselsdato: @Model.BirthDate</p>
-<p>Navn: @Model.Name</p>
-<form asp-controller="Issuer" asp-action="Index" method="POST">
-    <label asp-for="PersonNummer"></label> <input asp-for="PersonNummer" /><br />
-    <label asp-for="BirthDate"></label> <input asp-for="BirthDate" /><br />
-    <label asp-for="Biometry"></label><br />
-    <input asp-for="Biometry" /><br />
-    <button type="submit">Legg til</button>
-</form>
+<p>Navn: <span style="font-family: monospace;">@Model.Name</span></p>
+<p>Personnummer: <span style="font-family: monospace;">@Model.PersonNummer</span></p>
+<p>Fødselsdato: <span style="font-family: monospace;">@Model.BirthDate</span></p>
+<p>Forelders navn: <span style="font-family: monospace;">@Model.Parent1</span></p>
+<p>Forelders navn: <span style="font-family: monospace;">@Model.Parent2</span></p>
