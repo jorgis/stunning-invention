@@ -14,7 +14,7 @@ function poll() {
             },
             error: function(data){
                 console.log("polling failed");
-                window.location.href = "/Authenticator/error"
+                // window.location.href = "/Authenticator/error"
             },
             dataType: "json",
             complete: poll,
