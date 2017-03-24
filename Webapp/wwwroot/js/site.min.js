@@ -21,5 +21,5 @@ function poll() {
             complete: poll,
             timeout: 2000
         })
-    }, 5000);
+    }, 2000);
 };
