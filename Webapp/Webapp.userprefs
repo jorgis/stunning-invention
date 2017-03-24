@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{CDCACBC4-424F-459A-845B-38A8F76DDF7B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Home/Index.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Shared/_Layout.cshtml">
     <Files>
       <File FileName="Views/Authenticator/Selector.cshtml" Line="20" Column="1" />
       <File FileName="Views/Authenticator/Scanner.cshtml" Line="8" Column="29" />
@@ -10,7 +10,8 @@
       <File FileName="Models/BankViewModel.cs" Line="1" Column="1" />
       <File FileName="Views/Home/About.cshtml" Line="5" Column="4" />
       <File FileName="Views/Authenticator/Success.cshtml" Line="9" Column="54" />
-      <File FileName="Views/Home/Index.cshtml" Line="7" Column="24" />
+      <File FileName="Views/Home/Index.cshtml" Line="7" Column="74" />
+      <File FileName="Views/Shared/_Layout.cshtml" Line="31" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,10 +21,12 @@
               <Node name="Controllers" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Authenticator" expanded="True" />
-                <Node name="Home" expanded="True">
-                  <Node name="Index.cshtml" selected="True" />
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" selected="True" />
                 </Node>
               </Node>
+              <Node name="wwwroot" expanded="True" />
             </Node>
           </Node>
         </State>
