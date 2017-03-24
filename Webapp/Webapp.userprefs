@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{CDCACBC4-424F-459A-845B-38A8F76DDF7B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Home/About.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Authenticator/Success.cshtml">
     <Files>
       <File FileName="Views/Authenticator/Selector.cshtml" Line="20" Column="1" />
       <File FileName="Views/Authenticator/Scanner.cshtml" Line="8" Column="29" />
@@ -8,7 +8,8 @@
       <File FileName="Models/AuthenticatorViewModel.cs" Line="2" Column="17" />
       <File FileName="Views/Bank/Index.cshtml" Line="18" Column="27" />
       <File FileName="Models/BankViewModel.cs" Line="1" Column="1" />
-      <File FileName="Views/Home/About.cshtml" Line="17" Column="4" />
+      <File FileName="Views/Home/About.cshtml" Line="5" Column="4" />
+      <File FileName="Views/Authenticator/Success.cshtml" Line="9" Column="54" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,9 +18,10 @@
             <Node name="Webapp" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True">
-                  <Node name="About.cshtml" selected="True" />
+                <Node name="Authenticator" expanded="True">
+                  <Node name="Success.cshtml" selected="True" />
                 </Node>
+                <Node name="Home" expanded="True" />
               </Node>
             </Node>
           </Node>
