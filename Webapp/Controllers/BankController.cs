@@ -5,10 +5,18 @@ using Webapp.Helpers;
 using WebApp.Helpers.BlockCypher;
 using WebApp.Helpers.BlockCypher.Objects;
 
+using WebApp.Helpers;
+
 namespace Webapp.Controllers
 {
     public class BankController : Controller
     {
+        Session _session;
+        public BankController()
+        {
+            _session = new Session(HttpContext);
+        }
+        
         [HttpGet]
         public IActionResult Index()
         {
@@ -21,10 +29,10 @@ namespace Webapp.Controllers
 
         [HttpGet]
         public IActionResult Status()
-        {
+        {   
             // check transaction
             var  api = new Blockcypher(Constants.apiUserToken, Endpoint.BtcTest3);
-            var tr = api.GetTransactions(Constants.AddressSessionKey);
+            var tr = api.GetTransactions(_session.GetDemoAddress());
             var count = tr.Result.Length;
 
             return new JsonResult(count);
