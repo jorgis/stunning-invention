@@ -33,6 +33,13 @@ namespace Webapp.Controllers
 		}
 
 		[HttpGet]
+		public IActionResult Scanner()
+		{
+			return View();
+		}
+
+
+		[HttpGet]
 		public IActionResult Error()
 		{
 			return View();
