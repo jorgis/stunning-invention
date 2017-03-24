@@ -9,7 +9,7 @@ function poll() {
                 console.log("polling");
                 if(data === 'true')
                 {
-                    window.location.href = "/Authenticator/success";
+                    window.location.href = "/Bank/Secure";
                 }
             },
             error: function(data){
