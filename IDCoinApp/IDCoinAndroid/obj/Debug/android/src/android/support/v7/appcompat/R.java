@@ -1086,6 +1086,7 @@ containing a value of this type.
         public static int beginning=0x7f0a0016;
         public static int checkbox=0x7f0a002d;
         public static int collapseActionView=0x7f0a0010;
+        public static int contentFrame=0x7f0a003d;
         public static int default_activity_button=0x7f0a0028;
         public static int dialog=0x7f0a0014;
         public static int disableHome=0x7f0a0009;
@@ -1184,6 +1185,8 @@ containing a value of this type.
         public static int abc_simple_decor=0x7f040017;
         public static int main=0x7f040018;
         public static int support_simple_spinner_dropdown_item=0x7f040019;
+        public static int zxingscanneractivitylayout=0x7f04001a;
+        public static int zxingscannerfragmentlayout=0x7f04001b;
     }
     public static final class mipmap {
         public static int icon=0x7f030000;

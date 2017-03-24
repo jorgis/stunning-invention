@@ -26,6 +26,9 @@ namespace IDCoinAndroid
 		
 		public static void UpdateIdValues()
 		{
+			global::ZXing.Mobile.Resource.Id.contentFrame = global::IDCoinAndroid.Resource.Id.contentFrame;
+			global::ZXing.Mobile.Resource.Layout.zxingscanneractivitylayout = global::IDCoinAndroid.Resource.Layout.zxingscanneractivitylayout;
+			global::ZXing.Mobile.Resource.Layout.zxingscannerfragmentlayout = global::IDCoinAndroid.Resource.Layout.zxingscannerfragmentlayout;
 		}
 		
 		public partial class Animation
@@ -859,6 +862,9 @@ namespace IDCoinAndroid
 			// aapt resource value: 0x7f0a0010
 			public const int collapseActionView = 2131361808;
 			
+			// aapt resource value: 0x7f0a003d
+			public const int contentFrame = 2131361853;
+			
 			// aapt resource value: 0x7f0a0028
 			public const int default_activity_button = 2131361832;
 			
@@ -1100,6 +1106,12 @@ namespace IDCoinAndroid
 			
 			// aapt resource value: 0x7f040019
 			public const int support_simple_spinner_dropdown_item = 2130968601;
+			
+			// aapt resource value: 0x7f04001a
+			public const int zxingscanneractivitylayout = 2130968602;
+			
+			// aapt resource value: 0x7f04001b
+			public const int zxingscannerfragmentlayout = 2130968603;
 			
 			static Layout()
 			{

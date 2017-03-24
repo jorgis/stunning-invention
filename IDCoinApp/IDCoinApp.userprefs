@@ -8,12 +8,12 @@
       <File FileName="IDCoinApp/WebViewController.cs" Line="14" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.IDCoinAppAndroid PreferredExecutionTarget="Android.SelectDevice" />
+  <MonoDevelop.Ide.ItemProperties.IDCoinAppAndroid PreferredExecutionTarget="Android.Nexus_5X_API_23" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.IDCoiniAppOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E933F9B5-41B7-458B-9687-646CF1729AA6" />
 </Properties>

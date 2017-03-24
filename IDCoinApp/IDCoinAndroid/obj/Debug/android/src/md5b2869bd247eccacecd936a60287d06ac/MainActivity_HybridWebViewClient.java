@@ -10,7 +10,7 @@ public class MainActivity_HybridWebViewClient
 	public static final String __md_methods;
 	static {
 		__md_methods = 
-			"n_shouldOverrideUrlLoading:(Landroid/webkit/WebView;Ljava/lang/String;)Z:GetShouldOverrideUrlLoading_Landroid_webkit_WebView_Ljava_lang_String_Handler\n" +
+			"n_onLoadResource:(Landroid/webkit/WebView;Ljava/lang/String;)V:GetOnLoadResource_Landroid_webkit_WebView_Ljava_lang_String_Handler\n" +
 			"";
 		mono.android.Runtime.register ("IDCoinAndroid.MainActivity+HybridWebViewClient, IDCoinAndroid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", MainActivity_HybridWebViewClient.class, __md_methods);
 	}
@@ -24,12 +24,12 @@ public class MainActivity_HybridWebViewClient
 	}
 
 
-	public boolean shouldOverrideUrlLoading (android.webkit.WebView p0, java.lang.String p1)
+	public void onLoadResource (android.webkit.WebView p0, java.lang.String p1)
 	{
-		return n_shouldOverrideUrlLoading (p0, p1);
+		n_onLoadResource (p0, p1);
 	}
 
-	private native boolean n_shouldOverrideUrlLoading (android.webkit.WebView p0, java.lang.String p1);
+	private native void n_onLoadResource (android.webkit.WebView p0, java.lang.String p1);
 
 	private java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)

@@ -6,10 +6,11 @@ using Android.Views;
 using Android.Webkit;
 using Android.Widget;
 using Android.OS;
+using System.Collections.Generic;
 
 namespace IDCoinAndroid
 {
-	[Activity(Label = "IDCoinAndroid", MainLauncher = true, Icon = "@mipmap/icon")]
+	[Activity(Label = "IDCoinAndroid", MainLauncher = true, Icon = "@mipmap/icon", Theme="@android:style/Theme.DeviceDefault.NoActionBar")]
 	public class MainActivity : Activity
 	{
 		protected override void OnCreate(Bundle savedInstanceState)
@@ -42,36 +43,35 @@ namespace IDCoinAndroid
 
 		private class HybridWebViewClient : WebViewClient
 		{
-			public override bool ShouldOverrideUrlLoading(WebView webView, string url)
+			
+			public override async void OnLoadResource(WebView view, string url)
 			{
-
 				// If the URL is not our own custom scheme, just let the webView load the URL as usual
 				var scheme = "hybrid:";
 
-				if (!url.StartsWith(scheme))
-					return false;
+				//if (!url.StartsWith(scheme))
+				//	return false;
 
-				// This handler will treat everything between the protocol and "?"
-				// as the method name.  The querystring has all of the parameters.
-				var resources = url.Substring(scheme.Length).Split('?');
-				var method = resources[0];
-				var parameters = System.Web.HttpUtility.ParseQueryString(resources[1]);
-
-				if (method == "UpdateLabel")
+				if (url.EndsWith("Scanner"))
 				{
-					var textbox = parameters["textbox"];
+					var scanner = new ZXing.Mobile.MobileBarcodeScanner();
 
-					// Add some text to our string here so that we know something
-					// happened on the native part of the round trip.
-					var prepended = $"C# says: {textbox}";
+					var result = await scanner.Scan(view.Context, new ZXing.Mobile.MobileBarcodeScanningOptions { PossibleFormats = new List<ZXing.BarcodeFormat> { ZXing.BarcodeFormat.QR_CODE } });
 
-					// Build some javascript using the C#-modified result
-					var js = $"SetLabelText('{prepended}');";
+					if (result != null)
+					{
+						Console.WriteLine("Scanned Barcode: " + result.Text);
+						scanner.Cancel();
+						// TODO
+						//System.Net.WebClient client = new System.Net.WebClient();
+						//client.UploadString("https://idcoin.howell.no/Bank/Authenticated", result.Text);
+						// - POST request to /Bank/AuthenticateOrWhatever with the keywords in the QR
+						// - Navigate to /Authenticator/Success
 
-					webView.LoadUrl("javascript:" + js);
+						view.LoadUrl("https://idcoin.howell.no/Authenticator/Success");
+					}
+
 				}
-
-				return true;
 			}
 		}
 	}
