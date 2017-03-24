@@ -11,9 +11,9 @@
 <p>Borger er lagt til - her er fødselsattesten:</p>
 <p>@Html.Raw(@ViewData["Message"])</p>
 
-<p>Navn: @Model.Name</p>
+<p>Navn: <span style="font-family: monospace;">@Model.Name</p>
 <p>Personnummer: @Model.PersonNummer</p>
-<p>Navn: @Model.Name</p>
+<p>Fødselsdato: @Model.BirthDate</p>
 <p>Navn: @Model.Name</p>
 <form asp-controller="Issuer" asp-action="Index" method="POST">
     <label asp-for="PersonNummer"></label> <input asp-for="PersonNummer" /><br />
