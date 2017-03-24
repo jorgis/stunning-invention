@@ -1,7 +1,17 @@
+@using WebApp.Models;
+
+@model BirthCertificateInputModel
+
 @{
     ViewData["Title"] = "About";
 }
-<h2>@ViewData["Title"].</h2>
-<h3>@ViewData["Message"]</h3>
 
-<p>TODO ISSUER IS TO COME HEREUse this area to provide additional information.</p>
+<h2>@ViewData["Title"].</h2>
+<p>@Html.Raw(@ViewData["Message"])</p>
+
+<form asp-controller="Issuer" asp-action="Index" method="POST">
+    <input asp-for="PersonNummer" /><br />
+    <input asp-for="BirthDate" /><br />
+    <input asp-for="Biometry" /><br />
+    <button type="submit">Register new citizen</button>
+</form>

@@ -1,5 +1,5 @@
-﻿using System;
-namespace Webapp
+﻿
+namespace Webapp.Models
 {
 	public class AuthenticatorViewModel
 	{

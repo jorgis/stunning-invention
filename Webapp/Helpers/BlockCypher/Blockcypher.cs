@@ -311,7 +311,7 @@ namespace WebApp.Helpers.BlockCypher {
         internal async Task<T> PostAsync<T>(string url, object obj) where T : new() {
             var client = GetClient();
 
-            string targetUrl = string.Format("{0}/{1}", BaseUrl, url);
+            string targetUrl = string.Format("{0}/{1}?token={2}", BaseUrl, url, UserToken);
             string requestJson = (obj ?? new object()).ToJson();
             if (EnableLogging)
                 Debug.WriteLine("BlockCypher Request -> {0}\n{1}", targetUrl, requestJson);
