@@ -28,7 +28,13 @@ namespace Webapp.Controllers
         [HttpPost]
         public IActionResult Index(BirthCertificateInputModel viewmodel)
         {
-            return null;
+            if (ModelState.IsValid)
+            {
+
+                return View("BirthCertificate", viewmodel);
+            }
+
+            return View();
         }
 
         public string init_folkeregister()

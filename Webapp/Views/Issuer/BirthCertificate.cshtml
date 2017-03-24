@@ -3,19 +3,21 @@
 @model BirthCertificateInputModel
 
 @{
-    ViewData["Title"] = "Folkeregisteret";
+    ViewData["Title"] = "Fødelsattest";
 }
 
 <h2>@ViewData["Title"]</h2>
-<h3>Fødselsregistrering - legg til ny borger</h3>
+<h3>Fødselsattest</h3>
+<p>Borger er lagt til - her er fødselsattesten:</p>
 <p>@Html.Raw(@ViewData["Message"])</p>
 
+<p>Navn: @Model.Name</p>
+<p>Personnummer: @Model.PersonNummer</p>
+<p>Navn: @Model.Name</p>
+<p>Navn: @Model.Name</p>
 <form asp-controller="Issuer" asp-action="Index" method="POST">
-    <label asp-for="Name"></label> <input asp-for="Name" /><br />
     <label asp-for="PersonNummer"></label> <input asp-for="PersonNummer" /><br />
     <label asp-for="BirthDate"></label> <input asp-for="BirthDate" /><br />
-    <label asp-for="Parent1"></label> <input asp-for="Parent1" /><br />
-    <label asp-for="Parent2"></label> <input asp-for="Parent2" /><br />
     <label asp-for="Biometry"></label><br />
     <input asp-for="Biometry" /><br />
     <button type="submit">Legg til</button>
