@@ -7,17 +7,13 @@
 <h3>@ViewData["Message"]</h3>
 @model BankViewModel
 
-<br>
 <h3>Logg inn i banken</h3>
-<p></p>
 
-Scan qr-code with your Digital Identity app 
+<p>Scan qr-koden for å logge inn med din Digital Identity:</p>
 
-<br>
 
-<img  onload="poll();" src='https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=@modelView.QrValue'>
+<img onload="poll();" src='https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=@modelView.QrValue'>
 
 <br />
-
-Or you can write this code in your app: @modelView.QrValue
 <br />
+<p>Eller bruk disse kodeordene: <span style="font-size: 140%; font-family: monospace;">@modelView.QrValue</span></p>
